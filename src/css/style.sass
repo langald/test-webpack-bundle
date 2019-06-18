@@ -1,0 +1,47 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
+$screen-xs: '576px'
+
+body, html
+  font-size: 10px
+
+ul
+  padding: 0
+li
+  list-style-type: none
+p
+  font-size: 1.6rem
+
+.page-title 
+  margin: 50px 0
+  font-size: 2.2rem
+  @media only screen and(min-width: $screen-xs)
+    font-size: 2.8rem
+.error-link
+  font-size: 1.8rem
+
+.table
+  font-size: 1.4rem
+  @media only screen and(min-width: $screen-xs)
+    font-size: 1.8rem
+  &-row
+    display: flex
+    border-bottom: 1px solid #ccc
+    padding-top: 20px
+    padding-bottom: 20px
+  &-cell
+    width: 33%
+    overflow: hidden
+    padding: 10px
+    &--head
+      font-weight: 500
+      text-align: center
+    &--body
+      width: 66%
+  &-legend
+    font-size: 1.4rem
+    font-weight: 500
+    padding-right: 10px
+    display: none
+    @media only screen and(min-width: $screen-xs)
+      display: inline-block
